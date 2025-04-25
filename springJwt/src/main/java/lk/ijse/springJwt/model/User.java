@@ -20,18 +20,18 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    int id;
+    private Integer id;
     @Column(name = "first_name")
-    String firstName;
+    private String firstName;
     @Column(name = "last_name")
-    String lastName;
+    private String lastName;
     @Column(name = "user_name")
-    String username;
+    private String username;
     @Column(name = "password")
-    String password;
+    private String password;
     @Enumerated(EnumType.STRING)
     @Column(name = "role")
-    Role role;
+    private Role role;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
