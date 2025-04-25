@@ -13,5 +13,5 @@ spring:
       hibernate:
         format_sql: true
     database: mysql
-    database-platform: org.hibernate.MySQL8Dialect
+    database-platform: org.hibernate.dialect.MySQL8Dialect
 
